@@ -1,0 +1,25 @@
+{
+  "name": "material-design-icons-react-svg",
+  "version": "1.0.0",
+  "description": "Material Design Icons as React components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hlynur Tryggvason (h@x0r.is)",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-file": "^0.4.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-prettier": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "material-design-icons": "^3.0.1",
+    "pascal-case": "^3.1.1"
+  },
+  "dependencies": {
+    "react": "^16.0.0"
+  }
+}
