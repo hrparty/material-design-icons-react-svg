@@ -6,8 +6,8 @@
   "author": "Hlynur Tryggvason <h@x0r.is>",
   "homepage": "https://github.com/hrparty/material-design-icons-react-svg",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/hrparty/material-design-icons-react-svg.git"
+    "type": "git",
+    "url": "https://github.com/hrparty/material-design-icons-react-svg.git"
   },
   "license": "ISC",
   "devDependencies": {

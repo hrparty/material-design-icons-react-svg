@@ -17,7 +17,7 @@ function build() {
   return src("node_modules/material-design-icons/**/svg/production/*_24px.svg")
     .pipe(rename(path => {
       path.basename = path.basename.replace("ic_", "").replace("_24px", "");
-      path.extname = ".js";
+      path.extname = ".jsx";
     }))
     .pipe(insert.transform((content, file) => {
       let name = pascalCase(file.stem);
@@ -26,7 +26,11 @@ function build() {
         name = "ThreeDRotation"
       }
 
-      indexExports.push(`export { default as ${name} } from "./icons/${file.basename}"`);
+      const exportString = `export { default as ${name} } from "./icons/${file.basename}"`;
+
+      if (!indexExports.includes(exportString)) {
+        indexExports.push(exportString);
+      }
 
       return createReactComponent(name, content);
     }))
