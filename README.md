@@ -23,4 +23,4 @@ const IconList = () => {
 export default IconList;
 ```
 
-The icon search engine at [https://material.io/resources/icons/](https://material.io/resources/icons/) can be used to find icons. The icons are named the same as on that page, but in CamelCase. **The one exception is the icon 3d_rotation, which is named ThreeDRotation in this project**.
+The icons are named the same their files, with `ic_` and the size at the end (e.g. `_24px`) stripped off and in CamelCase. **The one exception is the icon 3d_rotation, which is named ThreeDRotation in this project**.
